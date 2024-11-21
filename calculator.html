@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link href="calculator.css" rel="stylesheet" />
+        <script src="calculator.js" defer></script>
+    </head>
+
+    <body>
+        <div class="calculator-body">
+            <div class="calculator-display">
+                <p id="Equation">0</p>  
+            </div>
+            <div class="calculator-rows">
+                <div class="button-row1">
+                    <ul>
+                        <li><button onclick="handleClick('+')">+</button></li>
+                        <li><button onclick="handleClick('1')">1</button></li>
+                        <li><button onclick="handleClick('2')">2</button></li>
+                        <li><button onclick="handleClick('3')">3</button></li>
+                    </ul>
+                </div>
+
+                <div class="button-row2">
+                    <ul>
+                        <li><button onclick="handleClick('-')">-</button></li>
+                        <li><button onclick="handleClick('4')">4</button></li>
+                        <li><button onclick="handleClick('5')">5</button></li>
+                        <li><button onclick="handleClick('6')">6</button></li>
+                    </ul>
+                </div>
+
+                <div class="button-row3">
+                    <ul>
+                        <li><button onclick="handleClick('*')">*</button></li>
+                        <li><button onclick="handleClick('7')">7</button></li>
+                        <li><button onclick="handleClick('8')">8</button></li>
+                        <li><button onclick="handleClick('9')">9</button></li>
+                    </ul>
+                </div>
+
+                <div class="button-row4">
+                    <ul>
+                        <li><button onclick="handleClick('/')">/</button></li>
+                        <li><button onclick="handleClick('0')">0</button></li>
+                        <li><button onclick="handleClick('.')">.</button></li>
+                        <li><button onclick="handleEvaluate()">=</button></li>
+                    </ul>
+                </div>
+
+                <div class="button-row5">
+                    <ul>
+                        <li><button onclick="handleClear()">C</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
