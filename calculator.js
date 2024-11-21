@@ -1,28 +1,26 @@
 let content = ""; 
 let equation = ""; 
+let oot = document.getElementById('Equation'); 
 
 function handleClear() {
     content = "";
     equation = "";
-    const oot = document.getElementById('Equation');
-    oot.innerHTML = content;
+    oot.innerHTML = content;  
 }
 
 function handleClick(value) {
     equation += value;
     content = equation;
-    const oot = document.getElementById('Equation');
-    oot.innerHTML = content;
+    oot.innerHTML = content; 
 }
 
 function handleEvaluate() {
     try {
-        content = eval(equation);
+        content = eval(equation);  
         equation = content;
-        const oot = document.getElementById('Equation');
-        oot.innerHTML = content;
+        oot.innerHTML = content; 
     } catch (error) {
-        const oot = document.getElementById('Equation');
-        oot.innerHTML = "Error";
+        oot.innerHTML = "Error"; 
     }
 }
+
