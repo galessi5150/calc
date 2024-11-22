@@ -21,6 +21,8 @@ function handleEvaluate() {
         oot.innerHTML = content; 
     } catch (error) {
         oot.innerHTML = "Error"; 
+        content="";
+        equation = "";
     }
 }
 
